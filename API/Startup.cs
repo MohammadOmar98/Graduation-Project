@@ -1,5 +1,6 @@
-using API.Data;
+using Core.Interfaces;
 using Infrastructer.Data;
+using Infrastructer.Data.Migrations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IProductRepository,ProductRepository>();
             services.AddControllers();
             services.AddDbContext <StoreContext> 
             (x=>x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
