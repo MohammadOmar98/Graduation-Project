@@ -1,0 +1,28 @@
+<div class="card  shadow-sm">
+  <div class="image position-relative" style="cursor: pointer;">
+    <div class="img-wrapper"> 
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+        <ul class="list-inline member-icons animate text-center"> 
+            <li class="list-inline-item"><button routerLink="/shop/{{product.id}}" class="btn btn-secondary"><i class="fa fa-eye"></i></button></li>
+            <li class="list-inline-item"><button (click)="addItemToWishList()" class="btn btn-secondary"><i class="fa fa-heart"></i></button></li>
+        </ul>
+    </div>
+      
+  </div>
+  
+  <div class="card-body d-flex flex-column">
+      <a class="product-name" routerLink="/shop/{{product.id}}">
+          <h6 class="text-uppercase">{{product.name}}</h6>
+      </a>
+      <span class="product-price mb-1 ml-5 mb-5">{{product.price | currency}}</span>
+
+      <div style="margin-left: 1rem; margin-top: -30px;" >
+        <button (click)="addItemtoBasket()"  class="btn card-button">ADD TO CART </button>
+       </div>
+  </div>
+</div>
+
+
+
+
+

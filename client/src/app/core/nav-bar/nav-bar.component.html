@@ -1,0 +1,54 @@
+
+<header class="d-flex flex-column nav-container flex-md-row align-items-center justify-content-between  px-md-5 mb-10 fixed-top">
+    <img src="/assets/images/logo3.png" alt="logo" class="logo" routerLink="/">
+    
+    
+     <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: small;">
+
+        <div id="marker"></div>
+        <a class="p-4 hover" [routerLink]="['/']" routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"
+        >Home</a>
+        <a class="p-4" routerLink="/shop" routerLinkActive="active">Shop</a>
+        <a class="p-4" routerLink="/test-error" routerLinkActive="active">Contact</a>
+        <a class="p-4" routerLink="/test-error" routerLinkActive="active">About</a>
+     
+    </nav>
+    
+    <div class="d-flex align-items-center ">
+      <a href="/basket" class="position-relative">
+          <i class="fa fa-shopping-cart p-2" style="font-size: large;"></i>
+          <div *ngIf="(basket$ | async) as basket" class="cart-no">{{basket.items.length}}</div>
+      </a>  
+
+      <a href="/wishlist"> <i class="fa fa-heart p-2" id="spliter" style="font-size: large;"></i> </a>
+
+       
+      <ng-container *ngIf="(currentUser$ | async) === null">
+        
+        <a href="/account/login"> <i class="fa fa-user p-2" style="font-size: large;"></i> </a>
+      </ng-container>
+
+      <ng-container *ngIf="currentUser$ | async">
+        <div class="dropdown ml-3 mr-5" dropdown>
+          <a  class="dropdown-toggle" style="cursor: pointer" dropdownToggle>
+            <strong style="color: rgb(47, 111, 47);"> {{(currentUser$ | async).dispalyName}}</strong>  
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" style="cursor: pointer;" *dropdownMenu>
+            <a routerLink="/basket" class="dropdown-item d-flex align-items-center py-2">
+              <i class="fa fa-shopping-cart mr-3"></i> View Basket
+            </a>
+            <a routerLink="/orders" class="dropdown-item d-flex align-items-center py-2">
+              <i class="fa fa-history mr-3"></i> View Orders
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="/account/login" (click)="logout()" class="dropdown-item d-flex align-items-center py-2">
+              <i class="fa fa-sign-out mr-3"></i> Logout
+            </a>
+          </div>
+        </div>
+      
+      </ng-container>
+    
+    </div>
+  </header>

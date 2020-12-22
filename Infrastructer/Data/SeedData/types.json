@@ -1,18 +1,38 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Suits"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Blazers"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Pants"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "T-Shirts"
+  },
+  {
+    "Id": 5,
+    "Name": "Shirts"
+  },
+  {
+    "Id": 6,
+    "Name": "Jeans"
+  },
+  {
+    "Id": 7,
+    "Name": "Belts"
+  },
+  {
+    "Id": 8,
+    "Name": "Jackets"
+  },
+  {
+    "Id": 9,
+    "Name": "Sweaters"
   }
 ]

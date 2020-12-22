@@ -3,6 +3,7 @@ using API.Errors;
 using Core.Interfaces;
 using Infrastructer.Data;
 using Infrastructer.Data.Migrations;
+using Infrastructer.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,7 +13,12 @@ namespace API.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            services.AddSingleton<IResponseCatcheService,ResponseCacheService>();
             services.AddScoped<IProductRepository,ProductRepository>();
+            services.AddScoped<IOrderService,OrderService>();
+            services.AddScoped<IPaymentService,PaymentService>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             
             services.Configure<ApiBehaviorOptions>(options =>

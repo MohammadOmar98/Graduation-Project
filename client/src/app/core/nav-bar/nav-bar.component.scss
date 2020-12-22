@@ -1,0 +1,130 @@
+.cart-no
+{
+  border-radius: 100%;
+  color: #fff;
+  font-size: 10px;
+  height: 1.7em;
+  line-height: 1.7em;
+  position: absolute;
+  right: 18px;
+  text-align: center;
+  top: 1px;
+  left: 15px;
+  width: 1.8em;
+  background: #666;
+}
+a {
+  position: relative;
+  font-family: 'Paprika', cursive;
+  color: #999;
+  letter-spacing: 3px;
+  transition: 0.6s;
+  text-decoration: none;
+  transform: scale(1.0,1.0);
+  transition-duration: 500ms ;
+  transition-timing-function: ease-out;
+
+  &.active {
+    font-weight: 800px;
+    color: rgb(232, 230, 228);
+  }
+
+  
+}
+a:hover{
+  transform: scale(1.2,1.2);
+  transition-duration: 500ms ;
+  transition-timing-function: ease-out;
+  opacity: 0.80;
+  color: white;
+}
+
+#spliter{
+  border-right: 1px solid #999;
+  border-radius: 1px;
+  line-height: 3px;
+}
+
+header.sticky #marker  {
+  background:rgb(5, 5, 5);
+}
+
+ #marker{
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background:rgb(255, 255, 255);
+  bottom: 10px;
+  transition: 0.5s;
+  border-radius: 4px;
+
+}
+
+
+.logo {
+  margin-left: -21px;
+  filter:none;
+  -webkit-filter: invert(100%);
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.nav-container{
+  background-color: rgb(0, 0, 0);
+  transition: 0.6s;
+}
+header.sticky{
+  padding: 5px 100px;
+  background-color: #ffffff;
+} 
+
+header.sticky nav a  {
+  color: #999;
+ 
+  &.active {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+}
+
+header.sticky  a:hover {
+   color: black;
+}
+
+header.sticky nav  a:hover {
+   color: black;
+}
+
+
+header.sticky nav  {
+  color: black;
+}
+
+header.sticky img.logo{
+ filter: none;
+ -webkit-filter: saturate(100%);
+}
+
+strong{
+  font-family: "Montserrat", Helvetica, Arial, sans-serif ;
+  font-weight: lighter;
+}
+
+.dropdown-item{
+  font-family: "Montserrat", Helvetica, Arial, sans-serif ;
+  font-weight: lighter;
+}
+
+.dropdown-item:hover{
+  transform: scale(1.0,1.0);
+  transition-duration: 500ms ;
+  transition-timing-function: ease-out;
+
+}
+
+

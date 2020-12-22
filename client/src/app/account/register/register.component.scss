@@ -1,0 +1,52 @@
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 1.5rem;
+    padding-left: 8rem;
+    height: 3.5rem;
+}
+
+li a{
+    color: #CCC;
+    margin-left: -20px;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size:1.2rem;
+}
+li a:hover{
+    color: black;
+}
+
+div form{
+    border: 1px solid rgb(232, 226, 226);
+    width: 35rem;
+    margin-left: -8rem;
+}
+
+#login{
+    margin-left: -3rem;
+}
+
+#register{
+    margin-left: 6rem;
+}
+
+h5 {
+    margin-left: -2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
+}
+
+button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+    width: 20rem;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    background: none;
+    border: 1px solid #CCC;
+}

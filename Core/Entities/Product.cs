@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Core.Entities
 {
     public class Product : BaseEntity
@@ -10,5 +12,7 @@ namespace Core.Entities
         public int ProductTypeId { get; set; }
         public ProductBrand ProductBrand { get; set; }
         public int ProductBrandId { get; set; }
+        public ICollection<Photo> Photos { get; set; }
+
     }
 }

@@ -1,0 +1,15 @@
+::ng-deep pagination .pagination a{
+   border: none !important;
+   background: none;
+   box-shadow: none;
+   font-family: 'Paprika', cursive;
+   color: black;
+   cursor: pointer;
+}
+
+
+::ng-deep .page-item.active .page-link {
+    background: white;
+    color: black;
+}
+

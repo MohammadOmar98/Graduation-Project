@@ -1,0 +1,80 @@
+::ng-deep .ngx-gallery { 
+    display: inline-block; margin-bottom: 20px; 
+}
+
+::ng-deep div.ngx-gallery-image {
+    cursor: crosshair !important;
+ }
+
+::ng-deep .ngx-gallery-thumbnail.ngx-gallery-active  {  
+   border: none!important;
+   display: block !important;
+   transform: scale(1.2,1.2);
+   transition-duration: 500ms ;
+   transition-timing-function: ease-out;
+}
+
+::ng-deep .ngx-gallery-thumbnail{
+   border: none !important;
+   display: block !important;
+   transform: scale(1.0,1.0);
+   transition-duration: 500ms ;
+   transition-timing-function: ease-out;
+
+}
+
+::ng-deep .ngx-gallery-thumbnail:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 500ms ;
+    transition-timing-function: ease-out;
+}
+
+
+h3 , h4{
+    font-family: 'Paprika', cursive;
+    font-weight: 600;
+}
+
+p{
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 2.15;
+}
+
+hr{
+    border-bottom:1px solid rgb(0, 0, 0) ;
+}
+
+strong{
+    color: #666;
+    font-family: "Droid Serif",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+span{
+    font-family: 'Paprika', cursive;
+    font-weight: 600;
+}
+
+button{
+    border: none;
+    font-family: 'Paprika', cursive;
+    color: #999;
+    background: none;
+    cursor: pointer;
+    transform: scale(1.0,1.0);
+   transition-duration: 500ms ;
+   transition-timing-function: ease-out;
+
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 500ms ;
+    transition-timing-function: ease-out;
+    color: black;
+}

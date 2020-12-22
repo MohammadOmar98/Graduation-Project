@@ -1,71 +1,68 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Infrastructer.Data;
+using API.Dtos;
+using API.Errors;
+using API.Helpers;
+using AutoMapper;
 using Core.Entities;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Core.Specifications;
-using API.Dtos;
-using AutoMapper;
-using API.Errors;
+using Infrastructure.Data;
 using Microsoft.AspNetCore.Http;
-using API.Helpers;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    
     public class ProductsController : BaseApiController
     {
-        private readonly IGenericRepository<Product> _productRepo;
+        private readonly IGenericRepository<Product> _productsRepo;
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
         private readonly IGenericRepository<ProductType> _productTypeRepo;
         private readonly IMapper _mapper;
 
-        public ProductsController(
-          IGenericRepository<Product> productRepo
-        , IGenericRepository<ProductBrand> productBrandRepo
-        , IGenericRepository<ProductType> productTypeRepo 
-        , IMapper mapper)
-        
+        public ProductsController(IGenericRepository<Product> productsRepo, IGenericRepository<ProductBrand> productBrandRepo, IGenericRepository<ProductType> productTypeRepo, IMapper mapper)
         {
             _mapper = mapper;
             _productTypeRepo = productTypeRepo;
             _productBrandRepo = productBrandRepo;
-            _productRepo = productRepo;
+            _productsRepo = productsRepo;
+
         }
 
+        [Cached(600)]
         [HttpGet]
-        public async Task<ActionResult<Pagination<Product>>> GetProducts([FromQuery]ProductSpecParams productParams)
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
+            [FromQuery]ProductSpecParams productParams)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
 
             var countSpec = new ProductWithFiltersForSpecification(productParams);
 
-            var totalItems = await _productRepo.CountAsync(spec);
+            var totalItems = await _productsRepo.CountAsync(countSpec);
 
-            var products = await _productRepo.ListAsync(countSpec);
+            var products = await _productsRepo.ListAsync(spec);
 
-            var data = _mapper.Map
-            <IReadOnlyList<Product>,
-             IReadOnlyList<ProductToReturnDto>>(products);
+            var data = _mapper
+                .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
 
-            return Ok(new Pagination<ProductToReturnDto>
-            (productParams.PageIndex,productParams.PageSize, totalItems, data));
+            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, productParams.PageSize, totalItems, data));
         }
 
+        [Cached(600)]
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
 
-            var product = await _productRepo.GetEntityWithSpec(spec);
+            var product = await _productsRepo.GetEntityWithSpec(spec);
 
-            if(product == null) return NotFound(new ApiResponse(404));
-            
-            return _mapper.Map<Product , ProductToReturnDto>(product);
-            
+            if (product == null) return NotFound(new ApiResponse(404));
+
+            return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 
         [HttpGet("brands")]
@@ -74,15 +71,11 @@ namespace API.Controllers
             return Ok(await _productBrandRepo.ListAllAsync());
         }
 
+        [Cached(1000)]
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
             return Ok(await _productTypeRepo.ListAllAsync());
         }
-
-
-
-
-
     }
 }

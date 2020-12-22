@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Paprika', cursive;
+}
+
+
+#product-overview {
+    background: url("/assets/images/header-bg.jpg");
+    background-size: cover;
+    background-position: right 50% bottom 0px;
+    width: 100%;
+    height: 42rem;
+    padding: 10px;
+}
+
+main {
+    margin-top:50px ; 
+}
+
+section h4 {
+
+    color: #e8e6e4;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    margin-left: 2.5rem;
+    margin-top: 11rem;
+    
+}
+
+section h1 {
+
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    
+}
+
+section h1 strong {
+    text-transform: lowercase;
+    font-family: 'Paprika', cursive;
+    font-style: to-lower-case($string: "");
+
+}
+
+section h1  span 
+{
+     text-transform: uppercase;
+}
+
+section button {
+    margin-left: 5rem;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    background: transparent;
+    width: 11rem;
+    color: #ffffff;
+    border: 1px solid #e5e3e2;
+    font-size: 14px;
+    padding: 12px 40px 12px 40px;
+    letter-spacing: 2px;
+
+}
+section button:hover {
+  background-color: aliceblue;
+  color: #000000;
+}
+
+//end section header 
+#video-overview
+{
+    background: linear-gradient(rgba(73, 73, 73, 0.6) 10%,transparent) ,url("/assets/images/video-back.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 31rem;
+    width: 67%;
+    float: left;
+    filter: grayscale(50%) brightness(0.7);
+    border: none;
+}
+
+#collection-overview {
+    width: 33%;
+    height: 30rem;
+    float: right;
+
+}
+
+section h2 {
+ font-size: 30px;
+ text-align: left;
+ font-family: "Montserrat",Helvetica,Arial,sans-serif;
+ margin:  5rem  3rem;
+ border-bottom: 5px solid black;
+ border-radius: 4px;
+ padding-bottom: 25px ;
+ letter-spacing: 6px;
+}
+
+section i {
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    line-height: 96px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    margin-left: 23.5rem;
+    margin-top: 13rem;
+}
+
+section a i:hover {
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+    filter: opacity(50%);
+}
+section div p {
+    margin-left: 3rem ;
+    font-size: 16px;
+}
+
+section div.view-collection {
+  margin: 2rem 4rem;  
+}
+
+.home-product-view{
+   width: 67%;
+   height: 48rem;
+   float: left;
+}
+
+.product-overview-2 {
+   background: linear-gradient(rgba(10, 30, 20, 1) 10%,transparent) ,url("/assets/images/product-overview-bg.jpg");
+   background-size: contain;
+   width: 33%;
+   height: 48rem;
+   background-attachment:fixed;
+
+   float: right;
+   filter: grayscale(40%) brightness(1);
+    
+}
+
+section div h4.pv-h4 {
+  color: rgb(235, 235, 235);
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 5rem;
+  
+}
+
+section div h2.pv-h2  {
+  color: rgb(235, 235, 235);
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  margin-left: 2rem;
+  margin-top: -1rem;
+}
+
+section div button.pv-button{
+    height: 4rem;
+    width: 10rem;
+    margin: 0.5rem 10rem;
+    color: white;
+    letter-spacing: 3px;
+}
+section div button.pv-button:hover{
+  color: #000000;
+  background: white;
+}
+
+
+.carousel-card{
+  margin-top: 3rem ;
+  margin-left: 10px ;
+}
+.carousel-list{
+ float: left;
+ list-style: none;
+ padding-right:1rem ;
+}
+.card{
+  border: none;
+  height: 400px;
+  width: 237px;
+  
+}
+
+.card-button{
+  padding-right: 10px;
+  border-radius: 0%;
+  background-color: white;
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  line-height: 2.15;
+  color: #000000;
+  border: 1px solid black;
+  margin-left: 20px;
+  font-size: 12px;
+  width: 8rem;
+}
+
+.card-button:hover{
+  background-color: #000000;
+  color: white;
+}
+
+
+.product-name{
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 2.15;
+  
+}
+.product-price{
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+
+}
+
+.product-name h6{
+  text-decoration: none;
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  text-align: center;
+  color: #5f5f5f;;
+}
+
+.product-name h6:hover{
+  color: #000000;
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+  background: #D6D6D6!important; /* dots color*/
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot.active span{
+   background: #000000!important; /*active and on hover color*/
+ }
+
+
+ ::ng-deep  .owl-theme .owl-dots .owl-dot:hover span {
+   background: #000000!important;
+ }
+
+ #belts-overview {
+  background: linear-gradient(rgba(73, 73, 73, 0.6) 10%,transparent) ,url("/assets/images/videobg.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 27% bottom 0px;
+  float: left;
+  border: none;
+ }
+
+ .belt-button{
+   margin-top: 1.5rem;
+  margin-left: 5rem;
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  background: transparent;
+  width: 11rem;
+  color: #ffffff;
+  border: 1px solid #e5e3e2;
+  font-size: 14px;
+  padding: 12px 40px 12px 40px;
+  letter-spacing: 2px;
+ }
+
+ .belt-button:hover{
+  background-color: aliceblue;
+  color: #000000;
+ }
+
+ .card img{
+  transform: scale(1.0,1.0);
+  transition-duration: 500ms ;
+  transition-timing-function: ease-out;
+ }
+ .card:hover img{
+  transform: scale(1.2,1.2);
+  transition-duration: 500ms ;
+  transition-timing-function: ease-out;
+  opacity: 0.80;
+ }
+
+ .img-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

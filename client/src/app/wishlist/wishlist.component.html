@@ -1,0 +1,103 @@
+<app-section-header></app-section-header>
+
+<div class=" ml-5 mt-5" *ngIf="(wishlist$ | async) === null">
+    <p>Your wishlist is currently empty.</p>
+       <a href="/shop"> <i class="fa fa-angle-left" aria-hidden="true"></i> Return to shop </a>
+</div>
+
+<div *ngIf="wishlist$ | async">
+
+    <div class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-5 mb-1">
+                    <ng-container >
+                        <h3>Your Wishlist </h3>
+                      <div class="table-responsive">
+                          <table class="table ">
+                              <thead class="border-0 py-2">
+                                  
+                                  <tr>
+
+                                    <th  scope="col" class="border-0">
+                                        <div class="py-2 text-uppercase"><p>&nbsp;</p></div>
+                                    </th>
+                                      
+                                      <th scope="col">
+                                          <div class="p-2 px-3 text-uppercase"><p>Product </p> </div>
+                                      </th>
+                                      
+                                      <th scope="col">
+                                          <div class="py-2 text-uppercase"><p>Price </p> </div>
+                                      </th>
+                                      <th scope="col">
+                                          <div class="py-2 text-uppercase"><p>&nbsp;</p></div>
+                                      </th>
+                                      <th scope="col">
+                                          <div class="py-2 text-uppercase"><p>&nbsp;</p></div>
+                                      </th>
+                                     
+                                  </tr>
+                              </thead>
+                    
+                            
+                              
+                              <tbody>
+                                  <tr *ngFor="let item of (wishlist$ | async).items" class="border-0">
+                                    <td class="align-middle text-center">
+                                        <a>
+                                            <i (click)="removeWishlistItem(item)" style="font-size: 2em; cursor: pointer;">X</i>
+                                        </a>
+                                    </td>
+                                      <th scope="row">
+                                          <div class="p-0">
+                                              <img src="{{item.pictureUrl}}" alt="{{item.productName}}"
+                                                  class="img-fluid" style="max-height: 50px;">
+                                              <div class="ml-3 d-inline-block align-middle">
+                                                  <h5 class="mb-0">
+                                                      <a routerLink="/shop/{{item.id || item.productId}}"
+                                                          class="text-dark">{{item.productName}}</a>
+                                                  </h5>
+                                                  <span
+                                                      
+                                                      class="text-muted font-weight-normal font-italic d-block">
+                                                      Type: {{item.type}}
+                                                  </span>
+                                                  <span
+                                                   
+                                                      class="text-muted font-weight-normal font-italic d-block">
+                                                      Brand: {{item.brand}}
+                                                  </span>
+                                              </div>
+                      
+                                          </div>
+                                      </th>
+                                      <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
+
+
+                                      <td class="align-middle">
+                                        <strong> <button (click)="addWishlistItemToBasket(item)"  >Add To Cart</button> </strong></td>
+                                     
+                                  </tr>
+                              </tbody>
+                              
+                          </table>
+                    
+                          <hr>
+                      </div>
+                    </ng-container>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

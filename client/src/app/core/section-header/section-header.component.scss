@@ -1,0 +1,54 @@
+section {
+    background: url("/assets/images/shop-header.jpg");
+    background-size: cover;
+    background-position: right 50% bottom 0px;
+    background-attachment: fixed;
+    max-width: 1400px;
+    height: 33rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    animation: slide 18s infinite;
+}
+
+@keyframes slide{
+    
+    50%{
+    background: url("/assets/images/shop-bg3.jpg");
+    background-size: cover;
+    background-position: right 50% bottom 0px;
+    background-attachment: fixed;
+    max-width: 1400px;
+    height: 33rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    75%{
+    background: url("/assets/images/shop-bg2-.jpg");
+    background-size: cover;
+    background-position: right 50% bottom 0px;
+    background-attachment: fixed;
+    max-width: 1400px;
+    height: 33rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+
+    100%{
+    background: url("/assets/images/shop-header.jpg");
+    background-size: cover;
+    background-position: right 50% bottom 0px;
+    background-attachment: fixed;
+    max-width: 1400px;
+    height: 33rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+
+
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+}
+

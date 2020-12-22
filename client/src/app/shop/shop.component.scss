@@ -1,0 +1,84 @@
+h5{
+    font-family: 'Paprika', cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2307692307692308em;
+    border-bottom: 1px dashed black;
+    padding-bottom:1rem ;
+}
+
+li{
+    font-family: 'Paprika', cursive;
+    border-bottom: 1px solid black;
+
+}
+
+select{
+    border: none;
+    font-family: 'Paprika', cursive;
+    font-weight: 600;
+}
+select:focus{
+    box-shadow: none;
+}
+
+
+li{
+    margin-left: 1rem;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+    transition-duration: 500ms ;
+    transition-timing-function: ease-out;
+    opacity: 0.80;
+}
+
+
+
+.list-group-item.active {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.0,1.0);
+    transition-duration: 500ms ;
+    transition-timing-function: ease-out;
+}
+
+.list-group-item:hover{
+    
+    color: black;
+    transform: scale(1.0,1.0);
+    transition-duration: 500ms ;
+    transition-timing-function: ease-out;
+}
+
+
+input{
+    border: none;
+    font-family: 'Paprika', cursive;
+    font-weight: 600;
+    background: none;
+
+}
+
+input:active{
+    color: black;
+}
+
+button{
+    background: none;
+}
+
+button:focus{
+    box-shadow: none;
+}
+
+input:focus{
+    box-shadow: none;
+    border-bottom: 2px solid black;
+    border-radius: 0%;
+    color: black;
+}
+
+

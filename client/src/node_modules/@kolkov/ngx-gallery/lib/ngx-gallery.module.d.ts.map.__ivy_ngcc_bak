@@ -1,0 +1,1 @@
+{"version":3,"file":"ngx-gallery.module.d.ts","sources":["ngx-gallery.module.d.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;AACA;AACA;;;AACA;AACA;;;AACA","sourcesContent":["import { HammerGestureConfig } from '@angular/platform-browser';\nexport declare class CustomHammerConfig extends HammerGestureConfig {\n    overrides: any;\n}\nexport declare class NgxGalleryModule {\n}\n"]}

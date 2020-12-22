@@ -1,0 +1,47 @@
+p , a{ 
+    font-family: "Droid Serif",Helvetica,Arial,sans-serif;
+    color: #999;
+    text-decoration: none;
+}
+
+
+
+a:hover ,i:hover{
+   color: black;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+p {
+    font-weight: lighter;
+    color: #999;
+    font-size: 13px;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+}
+
+span{
+    font-family: "Paprika", cursive;
+}
+
+i{
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    color: #999;
+    font-style: normal;
+}
+
+button{
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #999;
+}
+
+button:hover{
+    color: black;
+}
+
+

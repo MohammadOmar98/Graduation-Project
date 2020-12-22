@@ -1,0 +1,38 @@
+button.nav-link {
+    font-weight: lighter !important;
+    color: #999 !important;
+    font-size: 13px !important;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+    background-color: white;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+    &.active:hover {
+        color: rgb(0, 0, 0);  
+    }
+    & :active {
+        outline: none;
+    }
+    &.active:focus {
+        outline: none;
+    }
+    &:disabled:not(.active) {
+        color: #333;
+    }
+    &:disabled:not(.active) {
+        color: #333;
+    }
+}
+
+button.nav-link.active {
+    font-weight: lighter !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 13px !important;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+    background-color: white;
+    border-bottom: 2px solid black  ;
+    border-radius: 0%;
+
+}

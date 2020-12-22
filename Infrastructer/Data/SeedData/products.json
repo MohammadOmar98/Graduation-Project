@@ -1,146 +1,137 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
-    "PictureUrl": "images/products/sb-ang1.png",
+    "Name": "Fitted mohair wool tuxedo",
+    "Description": "A tuxedo crafted from mohair wool with contrasting satin details. Tailored in Gucci's fitted silhouette with a slim jacket and slightly cropped pants. Elements from classic tailoring continue to be reimagined through the Gucci lens.",
+    "Price": 4300,
+    "PictureUrl" : "/images/products/gucci/suits/suit1.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "ProductBrandId": 1,
+    "Photos": [
+      {
+         "Url" : "/images/products/gucci/suits/suit1.jpg",
+         "isMain" : true
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit1-1.jpg",
+        "isMain" : false
+     
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit1-2.jpg",
+        "isMain" : false
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit1-3.jpg",
+        "isMain" : false
+      }
+    ]
   },
   {
-    "Name": "Green Angular Board 3000",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Name": "Fitted bee check wool suit",
+    "Description": "The suit's notch lapel and soft, narrow shoulders point to its archival inspiration while its fit keeps it firmly rooted in the now. The bee—a symbol first used by Gucci in the '70s—is brought back into the forefront and established as a key code of the House.",
+    "Price": 2980,
+    "PictureUrl" : "/images/products/gucci/suits/suit2.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1,
+    "ProductsCatalogs": [
+      {
+         "Url" : "/images/products/gucci/suits/suit2.jpg",
+         "isMain" : true
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit2-1.jpg",
+        "isMain" : false
+     
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit2-2.jpg",
+        "isMain" : false
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit2-3.jpg",
+        "isMain" : false
+      }
+    ]
+  },
+  {
+    "Name": "Tapered wool mohair tuxedo",
+    "Description": "The House's slim-fitting suit is presented in a blend of black wool and mohair. Gucci continues to push the established notions of tailoring and enhance them with diverse fits, fabrics and codes.",
     "Price": 150,
-    "PictureUrl": "images/products/sb-ang2.png",
+    "PictureUrl" : "/images/products/gucci/suits/suit3.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "ProductBrandId": 1,
+    "ProductsCatalogs": [
+      {
+         "Url" : "/images/products/gucci/suits/suit3.jpg",
+         "isMain" : true
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit3-1.jpg",
+        "isMain" : false
+     
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit3-2.jpg",
+        "isMain" : false
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit3-3.jpg",
+        "isMain" : false
+      }
+    ]
   },
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/sb-core1.png",
+    "Name": "New Signoria bees wool gabardine suit",
+    "Description": "The House's slim-fitting suit, the New Signoria, is presented in dark blue wool gabardine, enriched with a silk bees pattern. A distinctive symbol of the House – the bee comes from the '70s archives and is often associated with nobility, appearing in family crests, tapestries and paintings.",
+    "Price": 2850,
+    "PictureUrl" : "/images/products/gucci/suits/suit4.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductBrandId": 1,
+    "ProductsCatalogs": [
+      {
+         "Url" : "/images/products/gucci/suits/suit4.jpg",
+         "isMain" : true
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit4-1.jpg",
+        "isMain" : false
+     
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit4-2.jpg",
+        "isMain" : false
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit4-3.jpg",
+        "isMain" : false
+      }
+    ]
   },
   {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 300,
-    "PictureUrl": "images/products/sb-core2.png",
+    "Name": "Heritage tuxedo with piping",
+    "Description": "A stretch twill tuxedo trimmed with red piping, inspired by the one worn by Jared Leto at the 2016 Oscars. Tailored in Gucci's Heritage fit with a slim jacket and slightly cropped pants..",
+    "Price": 2900,
+    "PictureUrl" : "/images/products/gucci/suits/suit5.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
-    "PictureUrl": "images/products/sb-react1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 120,
-    "PictureUrl": "images/products/sb-ts1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 5
-  },
-  {
-    "Name": "Core Blue Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 10,
-    "PictureUrl": "images/products/hat-core1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 8,
-    "PictureUrl": "images/products/hat-react1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Purple React Woolen Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 15,
-    "PictureUrl": "images/products/hat-react2.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 18,
-    "PictureUrl": "images/products/glove-code1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
-  },
-  {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 15,
-    "PictureUrl": "images/products/glove-code2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
-  },
-  {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Price": 16,
-    "PictureUrl": "images/products/glove-react1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 14,
-    "PictureUrl": "images/products/glove-react2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 250,
-    "PictureUrl": "images/products/boot-redis1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 6
-  },
-  {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 189.99,
-    "PictureUrl": "images/products/boot-core2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 199.99,
-    "PictureUrl": "images/products/boot-core1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 150,
-    "PictureUrl": "images/products/boot-ang2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
-  },
-  {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/boot-ang1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "ProductBrandId": 1,
+    "ProductsCatalogs": [
+      {
+         "Url" : "/images/products/gucci/suits/suit5.jpg",
+         "isMain" : true
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit5-1.jpg",
+        "isMain" : false
+     
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit5-2.jpg",
+        "isMain" : false
+      },
+      {
+        "Url" : "/images/products/gucci/suits/suit5-3.jpg",
+        "isMain" : false
+      }
+    ]
   }
 ]

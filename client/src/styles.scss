@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+html, body {
+    font-family: 'Muli';
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.xng-breadcrumb-root {
+    padding: 8px 16px;
+    display: inline;
+    border-radius: 0;
+    color: white;
+}
+
+label.xng-breadcrumb-trail {
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+.xng-breadcrumb-separator {
+    padding: 0 0;
+    color: white;
+}
+a:not([href]):not([tabindex]).xng-breadcrumb-link{
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+a:not([href]):not([tabindex]).xng-breadcrumb-link:hover{
+  color: white;
+}
+
+.StripeElement {
+    height: 3.125em;
+
+}
+

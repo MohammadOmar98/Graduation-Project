@@ -1,0 +1,335 @@
+<main>
+  <section id="product-overview"  class="py-5">
+   <h4>
+    FASHION LOOKBOOK 2020
+   </h4>
+
+   <h1>
+   <strong> <span>B</span>eard & <span>M</span>ustache </strong>
+    <br>
+    FASHION TREND  <br> 2020     
+   </h1>
+   <br>
+
+   <button [routerLink]="['/shop']" routerLinkActive="router-link-active"  class="btn  ml-5" style="height: 3.8rem; border-radius: 0%;" >
+    SHOP NOW
+   </button>
+
+ </section>
+
+ <section id="video-overview">
+   <a href="#"> <i class="fa fa-play"> </i> </a>
+ </section>
+
+ <section id="collection-overview" >
+  <h2>
+    MEN WITH <br> SUITES & TIE
+  </h2>
+  <div style="margin:1rem ;">
+  <p> <span style="font-family: 'Paprika', cursive;"> Beard & Mustache </span>
+    grew out of a love affair with the rising independent fashion, open attitude,
+    unexpected pairings, and appreciation for all things ecclectic and unique.</p>
+  </div>
+  <div class="view-collection">
+    <a style="text-decoration: none;" href="/shop">
+      <span  style="color: rgb(0, 0, 0); font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-weight: bold; font-size: larger;"> 
+        View Collection
+      </span> 
+
+      <p class="fa fa-long-arrow-right ml-1 mb-2" style="color: black;"></p>
+    </a>
+  </div>
+ </section>
+
+ <div class="home-product-view">
+   <div class="carousel-card">
+
+    <owl-carousel-o [options]="customOptions">
+
+      <ng-template carouselSlide>
+        
+        <div class="slide" >
+         
+          <div *ngFor="let product of productByType1"> 
+          <ul class="carousel-card"> 
+            <li class="carousel-list">
+              <div class="card  shadow-sm">
+                <div class="image position-relative" style="cursor: pointer;">
+                  <div class="img-wrapper"> 
+                      <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+                     
+                  </div>     
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <a class="product-name" routerLink="/shop/{{product.id}}">
+                      <h6 class="text-uppercase">{{product.name}}</h6>
+                  </a>
+                  <span class="product-name mb-1 ml-5">{{product.price | currency}}</span>
+
+                  
+                
+              </div>
+                
+              </div>
+            </li>
+          </ul>
+         </div>
+        
+        
+        </div>
+      </ng-template> 
+      <ng-template carouselSlide>
+        
+        <div class="slide" >
+         
+          <div *ngFor="let product of productByType1"> 
+          <ul class="carousel-card"> 
+            <li class="carousel-list">
+              <div class="card  shadow-sm">
+                <div class="image position-relative" style="cursor: pointer;">
+                  <div class="img-wrapper"> 
+                      <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+                     
+                  </div>     
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <a class="product-name" routerLink="/shop/{{product.id}}">
+                      <h6 class="text-uppercase">{{product.name}}</h6>
+                  </a>
+                  <span class="product-name mb-1 ml-5">{{product.price | currency}}</span>
+
+
+                   <!-- <div style="margin: 10px;">
+                    <button class="btn card-button">ADD TO CART </button>
+                   </div> -->
+                
+              </div>
+                
+              </div>
+            </li>
+          </ul>
+         </div>
+        
+        
+        </div>
+      </ng-template> 
+      <ng-template carouselSlide>
+        
+        <div class="slide" >
+         
+          <div *ngFor="let product of productByType1"> 
+          <ul class="carousel-card"> 
+            <li class="carousel-list">
+              <div class="card  shadow-sm">
+                <div class="image position-relative" style="cursor: pointer;">
+                  <div class="img-wrapper"> 
+                      <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+                     
+                  </div>     
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <a class="product-name" routerLink="/shop/{{product.id}}">
+                      <h6 class="text-uppercase">{{product.name}}</h6>
+                  </a>
+                  <span class="product-name mb-1 ml-5">{{product.price | currency}}</span>
+
+
+                   <!-- <div style="margin: 10px;">
+                    <button class="btn card-button">ADD TO CART </button>
+                   </div> -->
+                
+              </div>
+                
+              </div>
+            </li>
+          </ul>
+         </div>
+        
+        
+        </div>
+      </ng-template> 
+
+    
+   
+    </owl-carousel-o>
+   
+   
+
+   </div>
+
+   <div class="view-collection" style="margin-left:22rem; margin-top: 2rem;">
+    <a style="text-decoration: none;" href="/shop">
+      <span style="color: rgb(0, 0, 0); font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-weight: bold; font-size: larger;"> 
+        View Collection
+      </span> 
+
+      <p class="fa fa-long-arrow-right ml-1 mb-2" style="color: black;"></p>
+    </a>
+  </div>
+  
+ </div>
+
+ <section class="product-overview-2">
+  <div class="Container" style="align-items: center; width: 50%;">
+    <h4 class="pv-h4">
+      MEN'S CLOTHING
+    </h4>
+
+    <br>
+    
+    <h2 class="pv-h2">
+      HOT TREND IN THIS WEEK
+    </h2>
+
+    <button [routerLink]="['/shop']" routerLinkActive="router-link-active"  class="btn ml-5" style="height: 3.8rem; border-radius: 0%; font-weight: 400;" >
+        SHOP NOW
+    </button>
+
+   
+  </div>
+ </section>
+
+
+
+ <div id="belts-overview" class="home-product-view">
+   <div style="margin-left: 18rem; margin-top: 9rem;" >
+  <img src="/assets/images/belt-logo.png" alt="">
+   <h4 style="color: white; font-family: Montserrat; margin-top: 3rem; margin-left: 5rem; font-size: 18px;">SPECIAL SALE</h4>
+
+   <h2 style="color: white; text-align: center;  margin-left: -19rem; margin-top: 1rem; font-weight: bolder;"> HOT DEALS WITH SALE UP TO 50% OFF <br>
+    FROM BARLEY</h2>
+     
+    <button [routerLink]="['/shop']" routerLinkActive="router-link-active"  class="btn belt-button  ml-5" style="height: 3.8rem; border-radius: 0%;" >
+      VIEW ALL
+     </button>
+
+   </div> 
+</div>
+
+<div style="background: none;" class="product-overview-2">
+
+  <div class="carousel-card" style="margin-top: 3rem; margin-left: 3rem;">
+    <owl-carousel-o [options]="customOptions">
+
+      <ng-template carouselSlide>
+        
+        <div class="slide" >
+         
+          <div *ngFor="let product of productByType"> 
+          <ul class="carousel-card"> 
+            <li class="carousel-list">
+              <div class="card  shadow-sm">
+                <div class="image position-relative" style="cursor: pointer;">
+                  <div class="img-wrapper"> 
+                      <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+                     
+                  </div>     
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <a class="product-name" routerLink="/shop/{{product.id}}">
+                      <h6 class="text-uppercase">{{product.name}}</h6>
+                  </a>
+                  <span class="product-name mb-1 ml-5">{{product.price | currency}}</span>
+<!--   
+                   <div style="margin-left: 1rem; margin-top: 1rem;" >
+                    <button class="btn card-button">ADD TO CART </button>
+                   </div> -->
+                
+              </div>
+                
+              </div>
+            </li>
+          </ul>
+         </div>
+        
+        </div>
+      </ng-template> 
+
+      <ng-template carouselSlide>
+        
+        <div class="slide" >
+         
+          <div *ngFor="let product of productByType"> 
+          <ul class="carousel-card"> 
+            <li class="carousel-list">
+              <div class="card  shadow-sm">
+                <div class="image position-relative" style="cursor: pointer;">
+                  <div class="img-wrapper"> 
+                      <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+                     
+                  </div>     
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <a class="product-name" routerLink="/shop/{{product.id}}">
+                      <h6 class="text-uppercase">{{product.name}}</h6>
+                  </a>
+                  <span class="product-name mb-1 ml-5">{{product.price | currency}}</span>
+  
+                   <!-- <div style="margin-left: 1rem; margin-top: 1rem;" >
+                    <button class="btn card-button">ADD TO CART </button>
+                   </div> -->
+                
+              </div>
+                
+              </div>
+            </li>
+          </ul>
+         </div>
+        
+        </div>
+      </ng-template> 
+
+
+      <ng-template carouselSlide>
+        
+        <div class="slide" >
+         
+          <div *ngFor="let product of productByType"> 
+          <ul class="carousel-card"> 
+            <li class="carousel-list">
+              <div class="card  shadow-sm">
+                <div class="image position-relative" style="cursor: pointer;">
+                  <div class="img-wrapper"> 
+                      <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+                     
+                  </div>     
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <a class="product-name" routerLink="/shop/{{product.id}}">
+                      <h6 class="text-uppercase">{{product.name}}</h6>
+                  </a>
+                  <span class="product-name mb-1 ml-5">{{product.price | currency}}</span>
+  
+                   <!-- <div style="margin-left: 1rem; margin-top: 1rem;" >
+                    <button class="btn card-button">ADD TO CART </button>
+                   </div> -->
+                
+              </div>
+                
+              </div>
+            </li>
+          </ul>
+         </div>
+        
+        </div>
+      </ng-template> 
+     
+    </owl-carousel-o>
+
+  </div>
+
+  <div class="view-collection" style="margin-top: 3rem; margin-left: 7rem;">
+    <a style="text-decoration: none;" href="/shop">
+      <span style="color: rgb(0, 0, 0); font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-weight: bold; font-size: larger;"> 
+        View More Products
+      </span> 
+
+      <p class="fa fa-long-arrow-right ml-1 mb-2" style="color: black;"></p>
+    </a>
+  </div>
+
+ 
+</div>
+
+</main>
+

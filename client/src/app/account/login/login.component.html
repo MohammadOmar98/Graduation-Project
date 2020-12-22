@@ -1,0 +1,30 @@
+<app-section-header></app-section-header>
+ 
+
+<div class="d-flex justify-content-center mt-5">
+  <div class="col-3">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      
+     
+      <ul>
+        <li id="login"><a> Login </a></li>
+        <li id="register"><a href="/account/register"> Register </a></li>
+      </ul>
+      <hr>
+         <h5>LOGIN TO YOUR ACCOUNT </h5>
+
+      <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+      <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+      
+     
+      <button [disabled]="loginForm.invalid" class="btn  btn-block" type="submit">Sign in</button>
+    </form>
+
+    <div *ngIf="showError" style="width: 33rem; margin-left: -7rem;  font-family: Montserrat,Helvetica,Arial,sans-serif;" class="alert alert-danger" role="alert">
+      Invalid username or password Please try again
+    </div>
+  </div>
+</div>
+
+
+
